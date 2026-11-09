@@ -1,10 +1,39 @@
-﻿.venv/
-data/
-db.sqlite3
-*.csv
-*.pkl
+# Python environments and generated files
+.venv/
+venv/
+env/
 __pycache__/
-.ipynb_checkpoints/
-.env
+*.py[cod]
 
+# Local configuration and secrets
+.env
+.env.*
+!.env.example
+
+# Local databases and datasets
+*.sqlite3
+*.sqlite3-journal
+data/
+*.csv
+
+# Model artifacts are tracked through Git LFS (see .gitattributes)
+*.pkl
+!models/*.pkl
+
+# Notebook and tool caches
+.ipynb_checkpoints/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# Unused source media; optimized variants used by the site are retained.
+car/images/13142859_2160_3840_24fps.mp4
+car/images/188613-883402208.mp4
+car/images/18062589_102325-kfsn-kings-co-crash.jpg
+car/images/image-auto-accident-involving-two-cars.jpg
+car/images/red-cargo-truck-highway-freight-transport-scene-with-open-road.jpg
+car/images/truck-with-white-trailer-drives-down-road-with-mountains-background.jpg
+
+# OS files
 .DS_Store
+Thumbs.db
